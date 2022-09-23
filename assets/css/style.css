@@ -595,7 +595,9 @@ body {
     text-transform: uppercase;
 }
 
-.hero-title { margin-block: 15px 12px; }
+.hero-title {
+    margin-block: 15px 12px;
+}
 
 .hero-text {
     color: var(--light-gray-2);
@@ -615,13 +617,93 @@ body {
     background-image: var(--gradient);
 }
 
-.brand .has-scrollbar { padding-block-end: 0; }
+.brand .has-scrollbar {
+    padding-block-end: 0;
+}
 
-.brand .has-scrollbar::-webkit-scrollbar { display: none; }
+.brand .has-scrollbar::-webkit-scrollbar {
+    display: none;
+}
 
 .brand-item {
     min-width: calc(50% - 10px);
     scroll-snap-align: start;
 }
 
-.brand-item > img { margin-inline: auto; }
+.brand-item>img {
+    margin-inline: auto;
+}
+
+
+
+
+/*-----------------------------------*\
+  #LATEST GAME
+\*-----------------------------------*/
+
+.section-wrapper {
+    position: relative;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.section-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    background-image: url("../images/section-wrapper-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.latest-game .section-title {
+    margin-block-end: 80px;
+}
+
+.latest-game .has-scrollbar {
+    margin-inline: -15px;
+    padding-inline: 15px;
+    scroll-padding-inline-start: 15px;
+}
+
+.latest-game-card {
+    position: relative;
+    box-shadow: var(--shadow-2);
+}
+
+.latest-game-card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--xiketic_90);
+    padding: 35px 25px;
+}
+
+.latest-game-card .card-badge {
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+}
+
+.latest-game-card .card-title {
+    margin-block-end: 12px;
+    transition: var(--transition);
+}
+
+.latest-game-card .card-title:is(:hover, :focus) {
+    color: var(--marigold);
+}
+
+.latest-game-card .card-price {
+    color: var(--silver);
+    font-size: var(--fs-10);
+    font-weight: var(--fw-600);
+}
+
+.latest-game-card .card-price .span { margin-inline-start: 5px; }
