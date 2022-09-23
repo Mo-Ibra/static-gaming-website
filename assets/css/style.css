@@ -478,11 +478,119 @@ body {
     transition-duration: 0.5s;
 }
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--white_15); }
+.navbar-item:not(:last-child) {
+    border-block-end: 1px solid var(--white_15);
+}
 
 .navbar-link {
     padding: 10px 25px;
     transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus) { background-color: var(--white_10); }
+.navbar-link:is(:hover, :focus) {
+    background-color: var(--white_10);
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+  #SEARCH BOX
+\*-----------------------------------*/
+
+.search-container {
+    background-color: var(--rich-black-fogra-29_95);
+    position: fixed;
+    /* google */
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 40px;
+    z-index: 6;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.search-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-container .input-wrapper {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+}
+
+.search-container .search-field {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 20px;
+    /* google */
+    padding-inline-end: 60px;
+    border-block-end: 3px solid var(--white_10);
+    outline: none;
+    transition: var(--transition);
+}
+
+.search-container .search-field:focus {
+    border-color: var(--light-gray-2);
+}
+
+.search-container .search-field::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-container .search-submit {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: var(--marigold);
+}
+
+.search-container .search-submit ion-icon {
+    --ionicon-stroke-width: 70px;
+}
+
+.search-container .search-close {
+    position: fixed;
+    inset: 0;
+    cursor: default;
+    z-index: -1;
+}
+
+
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero-banner {
+    display: none;
+}
+
+.hero {
+    --section-padding: 60px;
+    margin-block-start: 84px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.hero-subtitle {
+    color: var(--marigold);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+}

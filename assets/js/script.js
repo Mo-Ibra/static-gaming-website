@@ -15,3 +15,15 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navbarToggler.classList.remove("active");
   });
 }
+
+
+// Search Toggler:
+
+const searchToggler = document.querySelectorAll("[data-search-toggler]");
+const searchBox = document.querySelector("[data-search-box]");
+
+for (let i = 0; i < searchToggler.length; i++) {
+    searchToggler[i].addEventListener('click', function() {
+        searchBox.classList.toggle('active');
+    });
+}
