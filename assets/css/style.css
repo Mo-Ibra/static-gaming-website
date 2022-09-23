@@ -707,3 +707,79 @@ body {
 }
 
 .latest-game-card .card-price .span { margin-inline-start: 5px; }
+
+
+
+
+/*-----------------------------------*\
+  #LIVE MATCH
+\*-----------------------------------*/
+
+.live-match {
+    padding-block-start: 0;
+    overflow-x: hidden;
+}
+
+.live-match .section-title { margin-block-end: 90px; }
+
+.live-match-banner {
+    position: relative;
+    background-color: var(--light-gray-1);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow-3);
+}
+
+.live-match .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--marigold);
+    font-size: 60px;
+}
+
+.live-match-player {
+    position: relative;
+    padding-block-start: var(--section-padding);
+}
+
+.live-match-player::after {
+    content: "LIVE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 15rem;
+    font-weight: var(--fw-600);
+    color: var(--cultured-2);
+    z-index: -1;
+}
+
+.live-match-player .player { max-width: max-content; }
+
+.live-match-player .player-2 { margin-inline-start: auto; }
+
+.live-match-detail { margin-block: 50px; }
+
+.live-match-subtitle {
+    background-color: var(--marigold);
+    color: var(--white);
+    font-size: var(--fs-9);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    letter-spacing: 2px;
+    padding: 4px 20px;
+    width: max-content;
+    margin-inline: auto;
+    margin-block-end: 30px;
+}
+
+.live-match-time {
+    color: var(--xiketic);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-700);
+    max-width: max-content;
+    margin-inline: auto;
+    line-height: 1;
+}
