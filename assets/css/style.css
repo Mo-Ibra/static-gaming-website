@@ -1070,4 +1070,88 @@ body {
 }
 
 .blog-card .card-link ion-icon,
-.blog-card .card-link:is(:hover, :focus) { color: var(--marigold); }
+.blog-card .card-link:is(:hover, :focus) {
+    color: var(--marigold);
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+  #NEWSLETTER
+\*-----------------------------------*/
+
+.newsletter {
+    margin-block-end: 80px;
+}
+
+.newsletter-card {
+    background-color: var(--raisin-black-3);
+    padding: 40px 15px;
+    margin-block-start: -55px;
+    border-radius: 80px;
+}
+
+.newsletter .h2 {
+    font-size: var(--fs-4);
+    text-transform: uppercase;
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+.newsletter .input-wrapper {
+    max-width: 300%;
+    margin-inline: auto;
+    margin-block-end: 10px;
+}
+
+.newsletter .email-field {
+    font-size: var(--fs-9);
+    color: var(--white);
+    font-weight: var(--fw-500);
+    padding: 17px 45px;
+    padding-inline-end: 20px;
+    outline: none;
+}
+
+.newsletter .input-wrapper ion-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    color: var(--marigold);
+    --ionicon-stroke-width: 50px;
+}
+
+.newsletter .input-wrapper::before {
+    --bg: var(--raisin-black-4);
+    --skewX: -20deg;
+}
+
+.newsletter-btn {
+    font-size: var(--fs-9);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-inline: 20px;
+    transition: var(--transition);
+}
+
+.newsletter-btn::after {
+    display: none;
+}
+
+.newsletter-btn::before {
+    --skewX: -20deg;
+    transition: var(--transition);
+}
+
+.newsletter-btn:is(:hover, :focus) {
+    color: var(--marigold);
+}
+
+.newsletter-btn:is(:hover, :focus)::before {
+    background-color: var(--white);
+}
