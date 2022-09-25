@@ -967,3 +967,107 @@ body {
     color: var(--xiketic);
     border-color: var(--marigold);
 }
+
+
+
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+.blog {
+    background-color: var(--white);
+}
+
+.blog .section-title {
+    color: var(--xiketic);
+}
+
+.blog .section-text {
+    color: var(--dim-gray);
+    margin-block: 50px 60px;
+}
+
+.blog-list {
+    display: grid;
+    gap: 50px;
+}
+
+.blog-list .blog-card {
+    box-shadow: var(--shadow-4);
+}
+
+.blog-card .card-banner {
+    margin-block-end: 15px;
+}
+
+.blog-card .card-content {
+    padding: 15px;
+}
+
+.blog-card .card-meta-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-card .card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--quick-silver);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-card .card-meta-item ion-icon {
+    --ionicon-stroke-width: 50px;
+    color: var(--marigold);
+}
+
+.blog-card .card-meta-item a.item-text {
+    transition: var(--transition);
+}
+
+.blog-card .card-meta-item a.item-text:is(:hover, :focus) {
+    color: var(--marigold);
+}
+
+.blog-card .card-title {
+    color: var(--raisin-black-1);
+    font-size: var(--fs-5);
+    font-family: var(--ff-oxanium);
+    font-weight: var(--fw-800);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-block: 10px 15px;
+    transition: var(--transition);
+}
+
+.blog-card .card-title:is(:hover, :focus) {
+    color: var(--marigold);
+}
+
+.blog-card .card-text {
+    color: var(--dim-gray);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    line-height: 1.8;
+    margin-block-end: 25px;
+}
+
+.blog-card .card-link {
+    color: var(--raisin-black-1);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: var(--transition);
+}
+
+.blog-card .card-link ion-icon,
+.blog-card .card-link:is(:hover, :focus) { color: var(--marigold); }
