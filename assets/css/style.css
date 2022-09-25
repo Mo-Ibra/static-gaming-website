@@ -865,15 +865,25 @@ body {
     font-size: 14px;
 }
 
-.featured-game-card .card-icon { margin-block-end: 20px; }
+.featured-game-card .card-icon {
+    margin-block-end: 20px;
+}
 
-.featured-game-card .card-content-overlay .card-title { color: var(--xiketic); }
+.featured-game-card .card-content-overlay .card-title {
+    color: var(--xiketic);
+}
 
-.featured-game-card .card-content-overlay .span { color: var(--white); }
+.featured-game-card .card-content-overlay .span {
+    color: var(--white);
+}
 
-.featured-game-card:is(:hover, :focus-within) .card-content { opacity: 0; }
+.featured-game-card:is(:hover, :focus-within) .card-content {
+    opacity: 0;
+}
 
-.featured-game-card:is(:hover, :focus-within) .card-content-overlay { opacity: 1; }
+.featured-game-card:is(:hover, :focus-within) .card-content-overlay {
+    opacity: 1;
+}
 
 
 
@@ -883,3 +893,77 @@ body {
 /*-----------------------------------*\
   #SHOP
 \*-----------------------------------*/
+
+.shop {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.shop .section-text {
+    margin-block: 50px 60px;
+}
+
+.shop .has-scrollbar {
+    margin-inline: -15px;
+    padding-inline: 15px;
+    scroll-padding-inline-start: 15px;
+}
+
+.shop-card {
+    height: 100%;
+    box-shadow: var(--shadow-4);
+}
+
+.shop-card .card-content {
+    position: relative;
+    padding: 15px;
+    padding-block-start: 40px;
+}
+
+.shop-card .card-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shop-card .h3 {
+    font-size: var(--fs-7);
+}
+
+.shop-card .card-title {
+    transition: var(--transition);
+    margin-block-end: 10px;
+}
+
+.shop-card .card-title:is(:hover, :focus) {
+    color: var(--marigold);
+}
+
+.shop-card .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--marigold);
+}
+
+.shop-card .card-price {
+    font-family: var(--ff-oxanium);
+    font-weight: var(--fw-800);
+}
+
+.shop-card .card-btn {
+    color: inherit;
+    font-size: 18px;
+    padding: 7px;
+    border: 1px solid var(--english-violet);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.shop-card .card-btn:is(:hover, :focus) {
+    background-color: var(--marigold);
+    color: var(--xiketic);
+    border-color: var(--marigold);
+}
