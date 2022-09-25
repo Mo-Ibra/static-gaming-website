@@ -1311,3 +1311,25 @@ body {
     display: inline-block;
     color: var(--marigold);
 }
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+.back-top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    background-color: var(--marigold);
+    padding: 12px;
+    z-index: 4;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-top-btn.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
